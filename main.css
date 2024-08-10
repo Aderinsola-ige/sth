@@ -1,0 +1,185 @@
+body{
+    background-color: blanchedalmond;
+}
+.wrap {
+margin: 2em;
+}
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.divider{
+    height: 30px;
+    width: 1px;
+    border-right: 1px solid grey;
+}
+.header-left a{
+text-decoration: none;
+color: black;
+font-size: 1.2rem;
+}
+header{
+    display:flex ;
+    justify-content: space-between;
+    margin: 2em;
+    padding: 1em;
+    
+}
+main{
+    text-align: center;
+}
+
+nav ul{
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    list-style: none;
+margin: 0;
+width: 7%;
+text-align: right;
+padding: 2em;
+transform: translateX(100%);
+transition: transform 0;
+
+li{
+    margin: 1.5em 0;
+
+    &:nth-of-type(1) {
+        margin-bottom: 3em;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    
+    &:hover{
+        color: brown;
+    }
+    }
+}
+}
+.open{
+  transform: translateX(0%);  
+}
+h1,p{
+    text-align: center;
+}
+h1{
+    margin-top: 1em;
+}
+p{
+    font-size: 1.2em;
+    
+}
+.primary{
+    color: black;
+    text-decoration: none;
+    background-color: teal;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: .2em;
+    margin-top: 5em ;
+    
+    
+}
+.class{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 4em;
+    margin-left: 10em;
+    
+
+.class img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}}
+@media (min-width: 750px){
+    .wrap{
+        margin: 0 4em;
+    }
+    .hide-desktop{
+        display: none;
+}
+.hide-mobile{
+    display: block;
+}
+}
+nav ul{
+    position: unset;
+    background: none;
+    display: flex;
+    gap: 2em;
+    height: auto;
+    width: auto;
+    transform: translateX(0%);
+    margin: 0;
+    padding: 0;
+    
+
+    li a{
+        font-size: 1.2rem;
+        padding-top:0 ;
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 950px){
+    h1, p{
+        text-align: left;
+    }
+    main{
+        width: 50%;
+    
+    }
+    .container{
+        position: absolute;
+        z-index: -1;
+        width: 50%;
+        top: 15%;
+        right: 0;
+    }
+    
+}
+ 
+@media (min-width){
+    
+}
+.wrap{
+        margin: 0 auto;
+        padding: 0 2em;
+        max-width: 1200px;
+    
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
